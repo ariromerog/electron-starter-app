@@ -7,27 +7,9 @@ const APP_VERSION = import.meta.env.VITE_APP_VERSION;
 </script>
 
 <template>
-  <img
-    alt="Vue logo"
-    src="../assets/logo.svg"
-    width="150"
-  />
-
   <p>
     <!-- Example how to inject current app version to UI -->
     App version: {{ APP_VERSION }}
-  </p>
-
-  <p>
-    For a guide and recipes on how to configure / customize this project,<br />
-    check out the
-    <a
-      href="https://github.com/cawa-93/vite-electron-builder"
-      target="_blank"
-    >
-      vite-electron-builder documentation
-    </a>
-    .
   </p>
 
   <fieldset>
@@ -52,6 +34,9 @@ const APP_VERSION = import.meta.env.VITE_APP_VERSION;
 </template>
 
 <style>
+body {
+  background: #eee;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
