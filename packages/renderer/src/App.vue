@@ -1,7 +1,11 @@
 <script lang="ts" setup>
+import {BeakerIcon} from '@heroicons/vue/24/solid';
 //import './style.css';
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline"> Hello world! </h1>
+  <div>
+    <BeakerIcon class="h-16 w-16 text-zinc-500" />
+    <p>...</p>
+  </div>
 </template>

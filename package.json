@@ -54,6 +54,7 @@
     "vue-tsc": "1.8.22"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.0.18",
     "electron-updater": "6.1.4"
   }
 }
