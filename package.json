@@ -1,12 +1,12 @@
 {
-  "name": "vite-electron-builder",
-  "description": "This is a test",
+  "name": "electron-starter-app",
+  "description": "Starter app with Electron Vite and VueJS",
   "version": "1.0.2",
   "private": true,
   "author": {
-    "email": "kozackunisoft@gmail.com",
-    "name": "Alex Kozack",
-    "url": "https://kozack.me"
+    "email": "ari@digitalbox.cl",
+    "name": "Ari Romero",
+    "url": "https://github.com/ariromerog"
   },
   "main": "packages/main/dist/index.cjs",
   "scripts": {
