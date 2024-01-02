@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import {BeakerIcon} from '@heroicons/vue/24/solid';
 import ReactiveCounter from '/@/components/ReactiveCounter.vue';
-import BaseLayout from '/@/layouts/BaseLayout.vue';
+import BaseLayoutWithMenu from '/@/layouts/BaseLayoutWithMenu.vue';
 </script>
 
 <template>
-  <BaseLayout title="Main App Title">
+  <BaseLayoutWithMenu title="Main App Title">
     <div class="m-10 p-10 text-center">
-      <BeakerIcon class="h-36 w-36 text-lime-400 mx-auto my-4" />
+      <BeakerIcon class="h-36 w-36 text-lime-400 mx-auto my-4 drop-shadow-xl" />
       <h1 class="text-3xl mb-6">Electron Starter App</h1>
       <p>With Vue / Tailwind / Heroicons</p>
       <p>
@@ -15,7 +15,7 @@ import BaseLayout from '/@/layouts/BaseLayout.vue';
       </p>
     </div>
 
-    <p>
+    <p class="m-2 text-justify">
       Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
       ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur
       officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
@@ -25,7 +25,7 @@ import BaseLayout from '/@/layouts/BaseLayout.vue';
       eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris
       sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
     </p>
-    <p>
+    <p class="m-2 text-justify">
       Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
       ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur
       officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
@@ -35,7 +35,7 @@ import BaseLayout from '/@/layouts/BaseLayout.vue';
       eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris
       sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
     </p>
-    <p>
+    <p class="m-2 text-justify">
       Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
       ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur
       officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
@@ -45,5 +45,7 @@ import BaseLayout from '/@/layouts/BaseLayout.vue';
       eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris
       sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
     </p>
-  </BaseLayout>
+  </BaseLayoutWithMenu>
 </template>
+
+<style lang="css"></style>
