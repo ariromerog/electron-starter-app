@@ -4,42 +4,49 @@ defineProps(['title']);
 </script>
 
 <template>
-  <div class="header bg-stone-900 text-gray-200 p-2 shadow-md">
+  <div
+    id="header"
+    class="bg-stone-900 text-gray-200 p-2 shadow-md"
+  >
     <h1>
       <BeakerIcon class="h-6 w-6 text-lime-500 float-left mx-2" />
       {{ title }}
     </h1>
   </div>
-  <div class="menu">
+  <div id="menu">
     <BeakerIcon class="h-6 w-3 text-stone-400 mx-auto my-4 drop-shadow-xl" />
     <BeakerIcon class="h-6 w-3 text-stone-400 mx-auto my-4 drop-shadow-xl" />
     <BeakerIcon class="h-6 w-3 text-stone-400 mx-auto my-4 drop-shadow-xl" />
   </div>
-  <div class="content">
+  <div id="content">
     <slot />
   </div>
 </template>
 
 <style lang="css">
-.header {
-  position: fixed;
-  z-index: 100;
+#header {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 40px;
 }
-.content {
-  padding: 60px 20px 20px 60px;
+
+#content {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  right: 0;
+  bottom: 30px;
+  overflow: auto;
 }
-.menu {
-  position: fixed;
-  background: #444;
-  z-index: 10;
-  top: 40px;
+
+#menu {
+  position: absolute;
+  top: 50px;
   left: 0;
-  width: 40px;
-  bottom: 0;
-  overflow-y: auto;
+  bottom: 30px;
+  width: 90px;
+  overflow: auto;
 }
 </style>
