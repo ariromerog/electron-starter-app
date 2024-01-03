@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {AcademicCapIcon, BeakerIcon, BuildingOffice2Icon} from '@heroicons/vue/24/solid';
+import {BeakerIcon} from '@heroicons/vue/24/solid';
 defineProps(['title']);
 </script>
 
@@ -17,18 +17,7 @@ defineProps(['title']);
     id="menu"
     class="from-stone-800 to-stone-900 bg-gradient-to-r"
   >
-    <BeakerIcon class="h-10 w-10 text-stone-400 m-4" />
-    <BuildingOffice2Icon class="h-10 w-10 text-stone-400 m-4" />
-    <AcademicCapIcon class="h-10 w-10 text-stone-400 m-4" />
-    <BeakerIcon class="h-10 w-10 text-stone-400 m-4" />
-    <BuildingOffice2Icon class="h-10 w-10 text-stone-400 m-4" />
-    <AcademicCapIcon class="h-10 w-10 text-stone-400 m-4" />
-    <BeakerIcon class="h-10 w-10 text-stone-400 m-4" />
-    <BuildingOffice2Icon class="h-10 w-10 text-stone-400 m-4" />
-    <AcademicCapIcon class="h-10 w-10 text-stone-400 m-4" />
-    <BeakerIcon class="h-10 w-10 text-stone-400 m-4" />
-    <BuildingOffice2Icon class="h-10 w-10 text-stone-400 m-4" />
-    <AcademicCapIcon class="h-10 w-10 text-stone-400 m-4" />
+    menu
   </div>
   <div id="content">
     <slot />
