@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {BeakerIcon} from '@heroicons/vue/24/solid';
+import {AcademicCapIcon, BeakerIcon, BuildingOffice2Icon} from '@heroicons/vue/24/solid';
 defineProps(['title']);
 </script>
 
@@ -13,13 +13,32 @@ defineProps(['title']);
       {{ title }}
     </h1>
   </div>
-  <div id="menu">
-    <BeakerIcon class="h-6 w-3 text-stone-400 mx-auto my-4 drop-shadow-xl" />
-    <BeakerIcon class="h-6 w-3 text-stone-400 mx-auto my-4 drop-shadow-xl" />
-    <BeakerIcon class="h-6 w-3 text-stone-400 mx-auto my-4 drop-shadow-xl" />
+  <div
+    id="menu"
+    class="from-stone-800 to-stone-900 bg-gradient-to-r"
+  >
+    <BeakerIcon class="h-10 w-10 text-stone-400 m-4" />
+    <BuildingOffice2Icon class="h-10 w-10 text-stone-400 m-4" />
+    <AcademicCapIcon class="h-10 w-10 text-stone-400 m-4" />
+    <BeakerIcon class="h-10 w-10 text-stone-400 m-4" />
+    <BuildingOffice2Icon class="h-10 w-10 text-stone-400 m-4" />
+    <AcademicCapIcon class="h-10 w-10 text-stone-400 m-4" />
+    <BeakerIcon class="h-10 w-10 text-stone-400 m-4" />
+    <BuildingOffice2Icon class="h-10 w-10 text-stone-400 m-4" />
+    <AcademicCapIcon class="h-10 w-10 text-stone-400 m-4" />
+    <BeakerIcon class="h-10 w-10 text-stone-400 m-4" />
+    <BuildingOffice2Icon class="h-10 w-10 text-stone-400 m-4" />
+    <AcademicCapIcon class="h-10 w-10 text-stone-400 m-4" />
   </div>
   <div id="content">
     <slot />
+  </div>
+
+  <div
+    id="footer"
+    class="bg-stone-600 text-center text-sm"
+  >
+    footer
   </div>
 </template>
 
@@ -30,23 +49,34 @@ defineProps(['title']);
   left: 0;
   right: 0;
   height: 40px;
+  z-index: 1000;
+  overflow: hidden;
 }
 
 #content {
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 100px;
   right: 0;
-  bottom: 30px;
+  bottom: 20px;
   overflow: auto;
 }
 
 #menu {
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 0;
-  bottom: 30px;
-  width: 90px;
+  bottom: 20px;
+  width: 100px;
   overflow: auto;
+  z-index: 100;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
 }
 </style>
