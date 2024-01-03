@@ -30,6 +30,7 @@
     "format": "npx prettier --write \"**/*.{js,mjs,cjs,ts,mts,cts,vue,json}\""
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "@types/node": "20.9.0",
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "@vitejs/plugin-vue": "4.4.1",
