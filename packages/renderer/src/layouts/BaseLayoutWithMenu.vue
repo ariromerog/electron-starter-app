@@ -25,13 +25,21 @@ function toggleMenu(): void {
   <div
     id="menu"
     :class="{active: isActive}"
-    class="bg-zinc-900 bg-gradient-to-r border-r-zinc-800 shadow-sm"
+    class="bg-zinc-800"
   >
-    menu
+    <div>
+      <button class="bg-zinc-700"> 1 </button>
+    </div>
+    <div>
+      <button class="bg-zinc-700"> 1 </button>
+    </div>
+    <div>
+      <button class="bg-zinc-700"> 1 </button>
+    </div>
   </div>
   <div
     id="content"
-    class="bg-zinc-900"
+    class="bg-zinc-800"
   >
     <slot />
   </div>
@@ -58,7 +66,7 @@ function toggleMenu(): void {
 #content {
   position: absolute;
   top: 40px;
-  left: 100px;
+  left: 50px;
   right: 0;
   bottom: 20px;
   overflow: auto;
@@ -69,8 +77,9 @@ function toggleMenu(): void {
   top: 40px;
   left: 0;
   bottom: 20px;
-  width: 99px;
-  overflow: auto;
+  width: 49px;
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 100;
   transition: 0.3s ease-in width;
 }
@@ -85,5 +94,14 @@ function toggleMenu(): void {
   left: 0;
   right: 0;
   height: 20px;
+}
+
+#menu button {
+  margin: 10px;
+  padding: 4px;
+  width: 30px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
 }
 </style>
